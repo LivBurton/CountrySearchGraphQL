@@ -18,6 +18,8 @@ const CountryType = new GraphQLObjectType({
     subregion: { type: GraphQLString },
     population: { type: GraphQLInt },
     flag: { type: GraphQLString },
+    demonym: { type: GraphQLString },
+    nativeName: { type: GraphQLString },
   }),
 });
 

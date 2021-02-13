@@ -2,9 +2,12 @@ const express = require('express');
 const { graphqlHTTP } = require('express-graphql');
 // const cors = require('cors');
 const schema = require('./schema');
+const cors = require('cors');
 
 const app = express();
-// app.use(cors());
+
+// Allow cross-origin - added as was getting cors error. To make request from a different domain.
+app.use(cors());
 
 app.use(
   '/graphql',
